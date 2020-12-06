@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Astro Archives</title>
+       <meta charset="utf-8">
+       
+       <link rel="stylesheet"  
+             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+             crossorigin="anonymous">
+       
+       <link rel="stylesheet" type="text/css" href="main.css">
+       
+
+   </head>
+   
+   <body>
+     
+     <!--Navigation bar-->
+     <div id="nav-placeholder">
+         
+     </div>
+      
+       
+       <!-- Background image -->
+       <div class="img">
+           <img src="masterList.png" alt="masterList">
+       </div>
+       
+       <div>
+          <p>
+              Welcome to Astro Archives - A Travis Scott fan page. Here you can find the latest new, photos, and music from one of the greatest artists of all time.
+          </p>
+       </div>
+       
+       <!-- jQuery and AJAX methods are used here to load the nav.html so that if I wanted, I could put this could on multiple pages of the website and only have to changes in one place - nav.html -->
+       <script src="//code.jquery.com/jquery.min.js"></script>
+
+       <script>
+          $.get("nav.html", function(data){$("#nav-placeholder").replaceWith(data);});
+       </script>
+       
+       
+   </body>
+   
+</html>

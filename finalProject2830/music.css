@@ -1,0 +1,26 @@
+@font-face{
+    font-family: 'helvetica';
+    src:url(assets/HelveticaNeue.ttf);
+    font-style: normal;
+    font-weight: 100%;
+}
+.wrapper{
+    width: 70%; 
+    border: 6px solid #000000;
+    border-radius: 10px;
+    background-color: #7b7b7b;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: auto;
+    padding: 8px;
+    text-align: center;
+    font-family: helvetica, 'sans-serif';
+}
+
+body{
+    background-image: url(travis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
